@@ -1,16 +1,22 @@
 <template>
   <div class="feedback">
     <div class="container">
+      <div class="feedback__quantity">
+        <img class="quantity-manuser" src="@/img/quantity-manuser.jpg" alt="man-user">
+        <p class="quantity-number">10</p>
+      </div>
       <h2 class="feedback__title">Отзывы наших студентов</h2>
       <div class="feedback__content-firstline">
         <div class="feedback__firstline-card1">
           <img class="user-photo1" src="@/img/user-photo1.jpg" alt="user-photo">
+          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
           <h5 class="feedback__firstline-title1">Настя Потураева</h5>
           <p class="feedback__firstline-text1">Мне очень понравился курс, и в первую очередь – ваша команда. Чувствуются профессионализм и любовь к своему делу, видно, что каждый из сотрудников знает предмет до мелочей, готов развиваться и действительно хорош в своей сфере...</p>
           <p class="feedback__firstline-continue1">Читать далее</p>
         </div>
         <div class="feedback__firstline-card2">
           <img class="user-photo2" src="@/img/user-photo2.jpg" alt="user-photo">
+          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
           <h5 class="feedback__firstline-title2">Екатерина Вешниковская</h5>
           <p class="feedback__firstline-text2">Удалось посмотреть на многие уже знакомые вещи под другим углом, и это здорово. Понравилось, что на каждую тему было отведено небольшое количество времени – мы не уставали от перегрузки какой-то одной тематикой...</p>
           <p class="feedback__firstline-continue2">Читать далее</p>
@@ -19,18 +25,21 @@
       <div class="feedback__content-secondline">
         <div class="feedback__secondline-card3">
           <img class="user-photo3" src="@/img/user-photo3.jpg" alt="user-photo">
+          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
           <h5 class="feedback__secondline-title3">Катерина Зайцева</h5>
           <p class="feedback__secondline-text3">Очень полезное обучение, где можно услышать много практических кейсов и узнать актуальную информацию о трендах емейл-маркетинга.</p>
           <p class="feedback__secondline-continue3">Читать далее</p>
         </div>
         <div class="feedback__secondline-card4">
           <img class="user-photo4" src="@/img/user-photo4.jpg" alt="user-photo">
+          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
           <h5 class="feedback__secondline-title4">Ольга Константинова</h5>
           <p class="feedback__secondline-text4">Интересный, интерактивный курс. Было много информации, инструментов для «B2C», хотелось <br /> бы добавить еще больше информации для «B2B»...</p>
           <p class="feedback__secondline-continue4">Читать далее</p>
         </div>
         <div class="feedback__secondline-card5">
           <img class="user-photo5" src="@/img/user-photo5.jpg" alt="user-photo">
+          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
           <h5 class="feedback__secondline-title5">Екатерина Железнова</h5>
           <p class="feedback__secondline-text5">Я на мероприятие шла для обмена опытом. А на обучение собрались как раз ребята с разных проектов, которые действительно любят то, чем занимаются...</p>
           <p class="feedback__secondline-continue5">Читать далее</p>
@@ -39,6 +48,7 @@
       <div class="feedback__content-thirdline">
         <div class="feedback__thirdline-card6">
           <img class="user-photo6" src="@/img/user-photo6.jpg" alt="user-photo">
+          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
           <h5 class="feedback__thirdline-title6">Андрей Засорин</h5>
           <p class="feedback__thirdline-text6">Ребята всегда на высоте проводят подобные мероприятия. Самое главное – практическая составляющая, всё, что услышал, я смог реализовать в работе. Особенно был интересен материал о визуальной составляющей рассылок и все самые топовые фишки в вёрстке писем...</p>
           <p class="feedback__thirdline-continue6">Читать далее</p>
@@ -74,6 +84,41 @@ export default {
     display: flex;
   }
 
+  .facebook-avatarlogo {
+    margin-left: -30px;
+  }
+
+  .feedback__quantity {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+
+    width: 80px;
+    height: 36px;
+    margin-top: 165px;
+    display: flex;
+    .quantity-number {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+
+      color: #335381;
+
+      width: 15px;
+      height: 17px;
+      margin-top: 10px;
+      margin-left: 7px;
+    }
+    .quantity-manuser {
+      width: 15px;
+      height: 20px;
+      margin-top: 8px;
+      margin-left: 22px;
+    }
+  }
+
   .feedback__title {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -85,7 +130,7 @@ export default {
     color: #335381;
 
     text-align: center;
-    padding-top: 170px;
+    margin-top: -25px;
   }
 
   .feedback__firstline-card1 {

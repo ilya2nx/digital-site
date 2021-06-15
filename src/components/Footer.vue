@@ -1,5 +1,9 @@
 <template>
   <div class="footer">
+    <div class="gradient"></div>
+    <div class="green-dots"></div>
+    <div class="band1"></div>
+    <div class="band2"></div>
     <div class="container">
       <div class="subscription">
         <div class="subscription__inner">
@@ -34,8 +38,12 @@
         </div>
         <div class="footer__socials">
           <h3 class="socials-title">Соц. сети</h3>
-          <img class="facebook-logo" src="@/img/footer-facebook.svg" alt="facebook-logo">
-          <img class="instagram-logo" src="@/img/footer-instagram.svg" alt="instagram-logo">
+          <a href="#">
+            <img class="facebook-logo" src="@/img/footer-facebook.svg" alt="facebook-logo">
+          </a>
+          <a href="#">
+            <img class="instagram-logo" src="@/img/footer-instagram.svg" alt="instagram-logo">
+          </a>
         </div>
       </div>
       <div class="footer-line"></div>
@@ -56,7 +64,39 @@ export default {
 <style lang="scss" scoped>
   .footer {
     height: 797px;
-    background: linear-gradient(101.5deg, #2A4872 14.62%, rgba(12, 178, 127, 0.74) 103.36%);
+    position: relative;
+    .gradient {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('../img/gradient-footer.png') center center / cover no-repeat;
+      z-index: -4;
+    }
+    .green-dots {
+      background: url('../img/dots-footer.png') center center / cover no-repeat;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      max-width: 1300px;
+      left: -20px;
+      right: 0;
+      margin: auto;
+    }
+    .band1 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('../img/band1-footer.png') center center / cover no-repeat;
+      z-index: -2;
+    }
+    .band2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('../img/band2-footer.png') center center / cover no-repeat;
+      z-index: -3;
+    }
   }
 
   .checkbox-container {

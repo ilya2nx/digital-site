@@ -1,5 +1,8 @@
 <template>
   <div class="partners">
+    <div class="gradient"></div>
+    <div class="green-dots"></div>
+    <div class="band"></div>
     <div class="container">
       <div class="logo-firstline">
         <img class="abbyy-logo" src="@/img/abbyy-logo.png" alt="abbyy-logo">
@@ -34,8 +37,33 @@ export default {
 
 <style lang="scss" scoped>
   .partners {
-    background: linear-gradient(101.5deg, #2A4872 14.62%, rgba(12, 178, 127, 0.74) 103.36%);
     height: 417px;
+    position: relative;
+    .gradient {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('../img/gradient-partners.png') center center / cover no-repeat;
+      z-index: -3;
+    }
+    .green-dots {
+      background: url('../img/dots-partners.png') center center / cover no-repeat;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      max-width: 1300px;
+      left: -20px;
+      right: 0;
+      margin: auto;
+    }
+    .band {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('../img/band-partners.png') center center / cover no-repeat;
+      z-index: -2;
+    }
   }
   
   .logo-firstline {

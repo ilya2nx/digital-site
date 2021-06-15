@@ -1,5 +1,8 @@
 <template>
   <div class="header">
+    <div class="gradient"></div>
+    <div class="green-dots"></div>
+    <div class="band"></div>
     <div class="container__header">
       <div class="header__top">
         <img class="logo__img" src="@/img/logo.svg" alt="logo">
@@ -28,11 +31,38 @@ export default {
 
 <style lang="scss" scoped>
   .header {
+    position: relative;
     background-image: url('../img/header-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     min-height: 450px;
+    z-index: -4;
+    .gradient {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('../img/gradient.png') center center / cover no-repeat;
+      z-index: -3;
+    }
+    .green-dots {
+      background: url('../img/green-dots.png') center center / cover no-repeat;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      max-width: 1300px;
+      left: -20px;
+      right: 0;
+      margin: auto;
+    }
+    .band {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('../img/band.png') center center / cover no-repeat;
+      z-index: -2;
+    }
   }
 
   a {

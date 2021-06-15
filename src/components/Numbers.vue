@@ -1,21 +1,30 @@
 <template>
   <div class="digital-numbers">
-    <div class="container">
-      <h2 class="title">DIGITAL В ЦИФРАХ</h2>
-      <p class="subtitle">Мы стремимся к развитию и расширению границ. 
-        И у нас получается.
-      </p>
-      <div class="numbers">
-        <p class="number">140</p>
-        <p class="number">10</p>
-        <p class="number">30%</p>
+      <div class="container-first">
+        <div class="container">
+          <h2 class="title">DIGITAL В ЦИФРАХ</h2>
+          <p class="subtitle">Мы стремимся к развитию и расширению границ. 
+            И у нас получается.
+          </p>
+        </div>
       </div>
-      <div class="numbers-text">
-        <p class="text-1">человек обучилось на наших курсах</p>
-        <p class="text-2">городов</p>
-        <p class="text-3">слушателей курсов возвращаются к нам снова</p>
+        <div class="container-second">
+          <div class="gradient"></div>
+          <div class="dots"></div>
+          <div class="band"></div>
+          <div class="container">
+            <div class="numbers">
+              <p class="number">140</p>
+              <p class="number">10</p>
+              <p class="number">30%</p>
+            </div>
+            <div class="numbers-text">
+              <p class="text-1">человек обучилось на наших курсах</p>
+              <p class="text-2">городов</p>
+              <p class="text-3">слушателей курсов возвращаются к нам снова</p>
+            </div>
+          </div>
       </div>
-    </div>
   </div>
 </template>
 
@@ -48,6 +57,7 @@ export default {
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
+    padding-bottom: 155px;
 
     text-align: center;
 
@@ -59,13 +69,48 @@ export default {
     margin-right: auto;
   }
 
+  .container-second {
+    position: relative;
+    max-height: 170px;
+    z-index: -4;
+    .gradient {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('../img/gradient-numbers.png') center center / cover no-repeat;
+      z-index: -3;
+    }
+    .dots {
+      background: url('../img/dots-numbers.png') center center / cover no-repeat;
+      background-size: auto;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      max-width: 1300px;
+      left: -30px;
+      right: 0;
+      margin: auto;
+    }
+    .band {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('../img/band-numbers.png') center center / cover no-repeat;
+      z-index: -2;
+    }
+    .container {
+      position: relative;
+      top: -60px;
+    }
+  }
+
   .numbers {
     display: flex;
     justify-content: space-between;
-    padding-top: 96px;
     margin-left: 90px;
     margin-right: 70px;
-    text-shadow: -6px 0px 0px rgb(230, 230, 230);
+    text-shadow: -6px 0px 0px rgba(128, 128, 128, 0.2);
     .number {
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
@@ -96,7 +141,7 @@ export default {
       line-height: 27px;
       text-align: center;
 
-      color: #000000;
+      color: white;
 
       margin-top: 4px;
     }

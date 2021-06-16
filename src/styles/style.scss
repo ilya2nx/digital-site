@@ -10,3 +10,17 @@
   margin-right: auto;
   padding: 0 10px;
 }
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 680px;
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 680px;
+    padding: 0 10px;
+  }
+}

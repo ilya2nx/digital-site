@@ -4,7 +4,7 @@
       <h2 class="title">ФОРМАТЫ ОБУЧЕНИЯ</h2>
       <div class="online">
         <h3 class="subtitle__online">Онлайн</h3>
-        <p class="subtitle__online-text">Минимальные затраты времени и финансов. Вам <br /> не придется никуда ездить, вы можете пройти онлайн- курс в комфортном для вас режиме и вернуться <br /> к учебным материалам в любое время — доступ <br /> к курсу бессрочный.</p>
+        <p class="subtitle__online-text">Минимальные затраты времени и финансов. Вам не придется никуда ездить, вы можете пройти онлайн- курс в комфортном для вас режиме и вернуться  к учебным материалам в любое время — доступ  к курсу бессрочный.</p>
         <p class="online-link">Базовый курс по емейл-маркетингу</p>
         <img class="online-image" src="@/img/online-image.jpg" alt="online">
       </div>
@@ -183,6 +183,172 @@ export default {
     .offline-image {
       padding-top: 200px;
       padding-left: 5px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .title {
+      font-size: 26px;
+      line-height: 32px;
+      padding-top: 90px;
+    }
+
+    .online {
+      .subtitle__online {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 24px;
+      }
+      .online-image {
+        width: 328px;
+        height: 248px;
+        bottom: 0;
+      }
+      .subtitle__online-text {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 320px;
+      }
+      .online-link {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 244px;
+        padding-top: 32px;
+      }
+    }
+
+    .offline {
+      .subtitle__offline {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 100px;
+        right: 228px;
+      }
+      .offline-image {
+        width: 341px;
+        padding-top: 93px;
+        padding-left: 0;
+        bottom: 0;
+      }
+      .subtitle__offline-text {
+        font-size: 14px;
+        line-height: 18px;
+        right: -18px;
+        padding-top: 151px;
+        max-width: 328px;
+      }
+      .offline-link1 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 265px;
+        right: 95px;
+
+        padding-bottom: 5px;
+        max-width: 217px;
+      }
+      .offline-link2 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 315px;
+        right: 150px;
+
+        padding-bottom: 5px;
+        max-width: 161px;
+      }
+      .offline-link3 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 315px;
+        right: 0px;
+
+        padding-bottom: 5px;
+        max-width: 119px;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .title {
+      font-size: 22px;
+      line-height: 27px;
+      padding-top: 55px;
+      padding-left: 7px;
+    }
+
+    .online {
+      .subtitle__online {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 300px;
+      }
+      .online-image {
+        width: 328px;
+        height: 248px;
+        bottom: 0;
+        top: 24px;
+        right: -10px;
+      }
+      .subtitle__online-text {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 270px;
+      }
+      .online-link {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 244px;
+        padding-top: 24px;
+      }
+    }
+
+    .offline {
+      .subtitle__offline {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 300px;
+        right: 210px;
+      }
+      .offline-image {
+        width: 320px;
+        height: 253px;
+        padding-top: 50px;
+        padding-left: 0;
+        margin-left: -10px;
+      }
+      .subtitle__offline-text {
+        font-size: 14px;
+        line-height: 18px;
+        right: 6px;
+        padding-top: 330px;
+        max-width: 287px;
+      }
+      .offline-link1 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 465px;
+        right: 77px;
+
+        padding-bottom: 5px;
+        max-width: 217px;
+      }
+      .offline-link2 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 520px;
+        right: 133px;
+
+        padding-bottom: 5px;
+        max-width: 161px;
+      }
+      .offline-link3 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 575px;
+        right: 175px;
+
+        padding-bottom: 5px;
+        max-width: 119px;
+      }
     }
   }
 </style>

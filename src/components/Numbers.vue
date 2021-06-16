@@ -125,8 +125,8 @@ export default {
       color: #40E896;
     }
     .number:nth-child(2) {
-        margin-left: 245px;
-        margin-right: 227px;
+      margin-left: 245px;
+      margin-right: 227px;
     }
   }
 
@@ -160,6 +160,152 @@ export default {
       max-width: 319px;
       margin-right: 10px;
       margin-bottom: 55px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .title {
+      font-size: 26px;
+      line-height: 32px;
+      padding-top: 75px;
+      text-align: center;
+    }
+    
+    .subtitle {
+      font-size: 14px;
+      line-height: 18px;
+      width: 380px;
+      height: 36px;
+      padding-bottom: 130px;
+      margin-top: 16px;
+    }
+
+    .container-second {
+      max-height: 124px;
+      .gradient {
+        background: url('../img/gradient-numbers-ipad.png') center center / cover no-repeat;
+      }
+      .band {
+        background: url('../img/band-numbers-ipad.png') center center / cover no-repeat;
+      }
+      .dots {
+        background: url('../img/dots-numbers-ipad.png') center center / cover no-repeat;
+        max-width: 900px;
+        left: 0;
+      }
+      .container {
+        top: -40px;
+      }
+    }
+
+    .numbers {
+      margin-left: 52px;
+      .number {
+        font-size: 64px;
+        line-height: 64px;
+      }
+      .number:nth-child(2) {
+        margin-left: 140px;
+        margin-right: 129px;
+      }
+    }
+
+    .numbers-text {
+      .text-1,.text-2,.text-3 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 9px;
+      }
+      .text-1 {
+        max-width: 171px;
+        margin-left: 20px;
+        margin-bottom: 55px;
+      }
+      .text-2 {
+        max-width: 71px;
+        margin-left: 113px;
+        margin-right: 85px;
+        margin-bottom: 82px;
+      }
+      .text-3 {
+        max-width: 212px;
+        margin-right: 5px;
+        margin-bottom: 55px;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .title {
+      font-size: 22px;
+      line-height: 27px;
+      padding-top: 55px;
+      width: 220px;
+      text-align: center;
+    }
+    
+    .subtitle {
+      font-size: 14px;
+      line-height: 18px;
+      width: 199px;
+      height: 54px;
+      padding-bottom: 130px;
+      margin-top: 16px;
+    }
+
+    .container-second {
+      max-height: 426px;
+      .gradient {
+        background: url('../img/gradient-numbers-phone.png') center center / cover no-repeat;
+      }
+      .dots {
+        background: url('../img/dots-numbers-phone.png') center center / cover no-repeat;
+        max-width: 320px;
+        left: 0;
+      }
+      .container {
+        top: -40px;
+      }
+    }
+
+    .numbers {
+      margin-left: 76px;
+      flex-direction: column;
+      .number {
+        font-size: 64px;
+        line-height: 64px;
+        margin-bottom: 94px;
+      }
+      .number:nth-child(2) {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 70px;
+      }
+    }
+
+    .numbers-text {
+      flex-direction: column;
+      .text-1,.text-2,.text-3 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 9px;
+      }
+      .text-1 {
+        max-width: 171px;
+        margin-left: 65px;
+        margin-bottom: 110px;
+        margin-top: -380px;
+      }
+      .text-2 {
+        max-width: 71px;
+        margin-left: 115px;
+        margin-bottom: 115px;
+      }
+      .text-3 {
+        max-width: 212px;
+        margin-left: 40px;
+        margin-bottom: 55px;
+      }
     }
   }
 </style>

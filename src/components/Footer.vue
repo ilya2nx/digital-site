@@ -11,7 +11,7 @@
           <p class="subscription__text">Новости, анонсы новых курсов, напоминалки — никакого спама, только самое важное.</p>
         </div>
         <div class="subscription__input">
-          <input class="input" type="text">
+          <input class="input" type="text" placeholder="Email">
         </div>
         <button class="btn">Хочу все знать</button>
       </div>
@@ -49,7 +49,7 @@
       <div class="footer-line"></div>
       <div class="footer__copyrights">
         <p class="cookie">Политика конфиденциальности / Персональные данные / Файлы cookie</p>
-        <p class="copyrights">Digital все права защищены</p>
+        <p class="copyrights"><span>Digital</span> Все права защищены</p>
       </div>
     </div>
   </div>
@@ -331,7 +331,7 @@ export default {
       line-height: 29px;
 
       color: #40E896;
-      width: 120;
+      width: 120px;
       height: 29px;
     }
     .facebook-logo {
@@ -377,8 +377,342 @@ export default {
       color: #FFFFFF;
 
       margin-top: 38px;
-      width: 178px;
+      width: 185px;
       height: 16px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .footer {
+      height: 730px;
+      .green-dots {
+        background: url('../img/dots-footer-ipad.png') center center / cover no-repeat;
+      }
+      .band1 {
+        background: url('../img/band1-footer-ipad.png') center center / cover no-repeat;
+      }
+    }
+
+    .subscription {
+      .subscription__title {
+        font-size: 26px;
+        line-height: 31px;
+        width: 176px;
+        margin-top: 168px;
+      }
+      .subscription__text {
+        font-size: 14px;
+        line-height: 18px;
+        width: 286px;
+        margin-top: -5px;
+        margin-right: 17px;
+      }
+      .input {
+        width: 217px;
+        height: 38px;
+      }
+      .btn {
+        width: 160px;
+        height: 38px;
+
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+
+    .checkbox-container {
+      width: 352px;
+      height: 28px;
+      margin-left: 303px;
+      margin-top: -60px;
+      .checkbox-text {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    .footer__tagline {
+      display: none;
+    }
+
+    .footer__courses {
+      margin-left: 0;
+      margin-top: 155px;
+      .courses-title {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      .courses-text {
+        font-size: 14px;
+        line-height: 28px;
+
+        width: 161px;
+        height: 112px;
+        margin-top: 21px;
+      }
+    }
+
+    .footer__contacts {
+      margin-left: 126px;
+      margin-top: 155px;
+      .contacts-title {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      .phone {
+        font-size: 12px;
+        line-height: 22px;
+
+        margin-top: 21px;
+        width: 57px;
+        height: 22px;
+      }
+      .phone-number {
+        font-size: 14px;
+        line-height: 17px;
+
+        margin-top: 4px;
+        width: 118px;
+        height: 17px;
+      }
+      .mail {
+        font-size: 12px;
+        line-height: 22px;
+
+        margin-top: 21px;
+        width: 40px;
+        height: 22px;
+      }
+      .mail-address {
+        font-size: 14px;
+        line-height: 17px;
+
+        margin-top: 4px;
+        width: 118px;
+        height: 17px;
+      }
+    }
+
+    .footer__socials {
+      margin-top: 155px;
+      margin-left: 155px;
+      .socials-title {
+        font-size: 18px;
+        line-height: 22px;
+
+        width: 90px;
+        height: 22px;
+      }
+      .facebook-logo {
+        margin-top: 21px;
+        width: 26px;
+        height: 26px;
+      }
+      .instagram-logo {
+        margin-left: 20px;
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    .footer-line {
+      margin-top: 45px;
+    }
+
+    .footer__copyrights {
+      .cookie {
+        font-size: 12px;
+        line-height: 18px;
+
+        margin-top: 32px;
+        width: 385px;
+        height: 36px;
+      }
+      .copyrights {
+        font-size: 12px;
+        line-height: 18px;
+
+        margin-top: 32px;
+        width: 165px;
+        height: 36px;
+      }
+      .copyrights::after {
+        content: ' © 2018-2019 ООО «ЭНКОД»';
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .footer {
+      height: 900px;
+      .gradient {
+        background: url('../img/gradient-footer-phone.png') center center / cover no-repeat;
+      }
+      .green-dots {
+        background: url('../img/dots-footer-phone.png') center center / cover no-repeat;
+        max-width: 320px;
+        left: 0;
+        top: 40px;
+      }
+      .band1 {
+        background: url('../img/band1-footer-phone.png') center center / cover no-repeat;
+      }
+    }
+
+    .subscription {
+      .subscription__title {
+        font-size: 22px;
+        line-height: 26px;
+        width: 176px;
+        margin-top: 101px;
+        margin-left: 10px;
+      }
+      .subscription__text {
+        font-size: 14px;
+        line-height: 18px;
+        width: 288px;
+        margin-top: -15px;
+        margin-right: 0;
+        margin-left: 10px;
+      }
+      .input {
+        width: 288px;
+        height: 48px;
+        margin-top: 260px;
+        margin-left: -302px;
+      }
+      .btn {
+        width: 160px;
+        height: 38px;
+        margin-top: 320px;
+        margin-left: -185px;
+        margin-right: 5px;
+
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+
+    .checkbox-container {
+      width: 270px;
+      height: 28px;
+      margin-left: 10px;
+      margin-top: 20px;
+      .checkbox-text {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    .footer__tagline {
+      display: none;
+    }
+
+    .footer__courses {
+      margin-left: 0;
+      margin-top: 105px;
+      margin-left: 10px;
+      .courses-title {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      .courses-text {
+        font-size: 14px;
+        line-height: 28px;
+
+        width: 290px;
+        height: 112px;
+        margin-top: 21px;
+      }
+    }
+
+    .footer__contacts {
+      margin-left: -290px;
+      margin-top: 230px;
+      .contacts-title {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      .phone {
+        display: none;
+      }
+      .phone-number {
+        font-size: 12px;
+        line-height: 15px;
+
+        margin-top: 19px;
+        width: 101px;
+        height: 15px;
+      }
+      .mail {
+        display: none;
+      }
+      .mail-address {
+        font-size: 12px;
+        line-height: 15px;
+
+        margin-top: 10px;
+        width: 155px;
+        height: 15px;
+      }
+    }
+
+    .footer__socials {
+      margin-top: 230px;
+      margin-left: 30px;
+      .socials-title {
+        font-size: 14px;
+        line-height: 17px;
+
+        width: 90px;
+        height: 22px;
+      }
+      .facebook-logo {
+        margin-top: 15px;
+        width: 24px;
+        height: 24px;
+      }
+      .instagram-logo {
+        margin-left: 12px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .footer-line {
+      margin-top: 17px;
+    }
+
+    .footer__copyrights {
+      display: flex;
+      flex-direction: column;
+      .cookie {
+        font-size: 12px;
+        line-height: 18px;
+
+        margin-left: 10px;
+        margin-top: 25px;
+        width: 290px;
+        height: 36px;
+      }
+      .copyrights {
+        font-size: 12px;
+        line-height: 16px;
+
+        margin-left: -5px;
+        margin-top: 40px;
+        width: 165px;
+        height: 32px;
+      }
+      .copyrights::after {
+        content: ' © 2018-2019 ООО «ЭНКОД»';
+      }
+      span {
+        display: none;
+      }
     }
   }
 

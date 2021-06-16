@@ -12,6 +12,7 @@
           <a href="#" class="header__button">отзывы</a>
           <a href="#" class="header__button">контакты</a>
         </div>
+        <img class="burger" src="@/img/burger.png" alt="burger">
       </div>
       <div class="header__content">
         <h2 class="header__title">Отзывы</h2>
@@ -24,8 +25,11 @@
 </template>
 
 <script>
+import { Slide } from 'vue-burger-menu'
 export default {
-
+  components: {
+    Slide
+  }
 }
 </script>
 
@@ -79,6 +83,10 @@ export default {
   }
 
   .header__top {
+    .burger {
+      display: none;
+    }
+
     padding: 24px 0 60px;
     display: flex;
     justify-content: space-between;
@@ -131,6 +139,105 @@ export default {
       max-width: 650px;
 
       color: #FFFFFF;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .header {
+      background-image: url('../img/header-ipad-background.jpg');
+      min-height: 338px;
+        .gradient {
+        background: url('../img/gradient-header-ipad.png') center center / cover no-repeat;
+      }
+    }
+
+    .container__header {
+      max-width: 680px;
+      padding: 0 0;
+    }
+    .logo__img {
+      width: 180px;
+      height: 31px;
+      margin-top: 20px;
+    }
+    .header__top {
+      .header__buttons {
+        font-size: 12px;
+        line-height: 14px;
+        .header__button {
+          width: 90px;
+          height: 26px;
+          border: 1px solid #40E896;
+          box-sizing: border-box;
+          border-radius: 2px;
+          padding-top: 5px;
+          opacity: 0.8;
+        }
+        .header__button:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+    .header__content {
+      padding-top: 20px;
+      padding-left: 0;
+      .header__title {
+        font-size: 26px;
+        line-height: 32px;
+        padding-bottom: 16px;
+      }
+      .header__text {
+        font-size: 14px;
+        line-height: 18px;
+        width: 416px;
+        height: 54px;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .header {
+      background-image: url('../img/header-phone-background.jpg');
+      min-height: 326px;
+        .gradient {
+        background: url('../img/gradient-header-phone.png') center center / cover no-repeat;
+      }
+    }
+
+    .container__header {
+      max-width: 320px;
+      padding: 0 16px;
+    }
+    .logo__img {
+      width: 160px;
+      height: 28px;
+      margin-top: 20px;
+    }
+    .header__top {
+      padding-top: 10px;
+      .header__buttons {
+        display: none;
+      }
+      .burger {
+        display: block;
+        padding-right: 13px;
+      }
+    }
+
+    .header__content {
+      padding-top: 20px;
+      padding-left: 0;
+      .header__title {
+        font-size: 22px;
+        line-height: 27px;
+        padding-bottom: 14px;
+      }
+      .header__text {
+        font-size: 14px;
+        line-height: 18px;
+        width: 288px;
+        height: 90px;
+      }
     }
   }
 </style>

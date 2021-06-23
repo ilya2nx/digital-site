@@ -6,59 +6,57 @@
         <p class="quantity-number">10</p>
       </div>
       <h2 class="feedback__title">Отзывы наших студентов</h2>
-      <div class="feedback__content-firstline">
-        <div class="feedback__firstline-card1">
-          <img class="user-photo1" src="@/img/user-photo1.jpg" alt="user-photo">
-          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
-          <h5 class="feedback__firstline-title1">Настя Потураева</h5>
-          <p class="feedback__firstline-text1">Мне очень понравился курс, и в первую очередь – ваша команда. Чувствуются профессионализм и любовь к своему делу, видно, что каждый из сотрудников знает предмет до мелочей, готов развиваться и действительно хорош в своей сфере...</p>
-          <p class="feedback__firstline-continue1">Читать далее</p>
+      <div class="feedback-container">        
+        <div class="feedback__card two-thirds">
+          <img class="user-photo" src="@/img/user-photo1.jpg" alt="user-photo">
+          <a href="#"><img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo"></a>
+          <h5 class="card__title">Настя Потураева</h5>
+          <p class="card__text">Мне очень понравился курс, и в первую очередь – ваша команда. Чувствуются профессионализм и любовь к своему делу, видно, что каждый из сотрудников знает предмет до мелочей, готов развиваться и действительно хорош в своей сфере...</p>
+          <a href="#"><p class="card__continue">Читать далее</p></a>
         </div>
-        <div class="feedback__firstline-card2">
-          <img class="user-photo2" src="@/img/user-photo2.jpg" alt="user-photo">
-          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
-          <h5 class="feedback__firstline-title2">Екатерина Вешниковская</h5>
-          <p class="feedback__firstline-text2">Удалось посмотреть на многие уже знакомые вещи под другим углом, и это здорово. Понравилось, что на каждую тему было отведено небольшое количество времени – мы не уставали от перегрузки какой-то одной тематикой...</p>
-          <p class="feedback__firstline-continue2">Читать далее</p>
+        <div class="feedback__card third-big">
+          <img class="user-photo" src="@/img/user-photo2.jpg" alt="user-photo">
+          <a href="#"><img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo"></a>
+          <h5 class="card__title">Екатерина Вешниковская</h5>
+          <p class="card__text">Удалось посмотреть на многие уже знакомые вещи под другим углом, и это здорово. Понравилось, что на каждую тему было отведено небольшое количество времени – мы не уставали от перегрузки какой-то одной тематикой...</p>
+          <a href="#"><p class="card__continue">Читать далее</p></a>
+        </div>             
+        <div class="feedback__card third">
+          <img class="user-photo" src="@/img/user-photo3.jpg" alt="user-photo">
+          <a href="#"><img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo"></a>
+          <h5 class="card__title">Катерина Зайцева</h5>
+          <p class="card__text">Очень полезное обучение, где можно услышать много практических кейсов и узнать актуальную информацию о трендах емейл-маркетинга.</p>
+          <a href="#"><p class="card__continue">Читать далее</p></a>
         </div>
-      </div>
-      <div class="feedback__content-secondline">
-        <div class="feedback__secondline-card3">
-          <img class="user-photo3" src="@/img/user-photo3.jpg" alt="user-photo">
-          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
-          <h5 class="feedback__secondline-title3">Катерина Зайцева</h5>
-          <p class="feedback__secondline-text3">Очень полезное обучение, где можно услышать много практических кейсов и узнать актуальную информацию о трендах емейл-маркетинга.</p>
-          <p class="feedback__secondline-continue3">Читать далее</p>
+        <div class="feedback__card third">
+          <img class="user-photo" src="@/img/user-photo4.jpg" alt="user-photo">
+          <a href="#"><img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo"></a>
+          <h5 class="card__title">Ольга Константинова</h5>
+          <p class="card__text">Интересный, интерактивный курс. Было много информации, инструментов для «B2C», хотелось <br /> бы добавить еще больше информации для «B2B»...</p>
+          <a href="#"><p class="card__continue">Читать далее</p></a>
         </div>
-        <div class="feedback__secondline-card4">
-          <img class="user-photo4" src="@/img/user-photo4.jpg" alt="user-photo">
-          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
-          <h5 class="feedback__secondline-title4">Ольга Константинова</h5>
-          <p class="feedback__secondline-text4">Интересный, интерактивный курс. Было много информации, инструментов для «B2C», хотелось <br /> бы добавить еще больше информации для «B2B»...</p>
-          <p class="feedback__secondline-continue4">Читать далее</p>
+        <div class="feedback__card third">
+          <img class="user-photo" src="@/img/user-photo5.jpg" alt="user-photo">
+          <a href="#"><img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo"></a>
+          <h5 class="card__title">Екатерина Железнова</h5>
+          <p class="card__text">Я на мероприятие шла для обмена опытом. А на обучение собрались как раз ребята с разных проектов, которые действительно любят то, чем занимаются...</p>
+          <a href="#"><p class="card__continue">Читать далее</p></a>
+        </div>        
+        <div class="feedback__card two-thirds">
+          <img class="user-photo" src="@/img/user-photo6.jpg" alt="user-photo">
+          <a href="#"><img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo"></a>
+          <h5 class="card__title">Андрей Засорин</h5>
+          <p class="card__text">Ребята всегда на высоте проводят подобные мероприятия. Самое главное – практическая составляющая, всё, что услышал, я смог реализовать в работе. Особенно был интересен материал о визуальной составляющей рассылок и все самые топовые фишки в вёрстке писем...</p>
+          <a href="#"><p class="card__continue">Читать далее</p></a>
         </div>
-        <div class="feedback__secondline-card5">
-          <img class="user-photo5" src="@/img/user-photo5.jpg" alt="user-photo">
-          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
-          <h5 class="feedback__secondline-title5">Екатерина Железнова</h5>
-          <p class="feedback__secondline-text5">Я на мероприятие шла для обмена опытом. А на обучение собрались как раз ребята с разных проектов, которые действительно любят то, чем занимаются...</p>
-          <p class="feedback__secondline-continue5">Читать далее</p>
-        </div>
-      </div>
-      <div class="feedback__content-thirdline">
-        <div class="feedback__thirdline-card6">
-          <img class="user-photo6" src="@/img/user-photo6.jpg" alt="user-photo">
-          <img class="facebook-avatarlogo" src="@/img/facebook-avatarlogo.png" alt="facebook-avatarlogo">
-          <h5 class="feedback__thirdline-title6">Андрей Засорин</h5>
-          <p class="feedback__thirdline-text6">Ребята всегда на высоте проводят подобные мероприятия. Самое главное – практическая составляющая, всё, что услышал, я смог реализовать в работе. Особенно был интересен материал о визуальной составляющей рассылок и все самые топовые фишки в вёрстке писем...</p>
-          <p class="feedback__thirdline-continue6">Читать далее</p>
-        </div>
-        <div class="feedback_content-add">
-          <div class="feedback-add">
-            <div class="add-horizontal"></div>
-            <img class="vertical-border" src="@/img/vertical-border.jpg" alt="">
+        <div class="feedback__card third-big">
+          <div class="card__add">
+            <img src="@/img/add-button.jpg" alt="add">
           </div>
         </div>
+      </div>
+      <div class="position-btn">
+        <button class="btn">Загрузить еще</button>
       </div>
     </div>
   </div>
@@ -72,16 +70,14 @@ export default {
 
 <style lang="scss" scoped>
 
-  .feedback__content-firstline {
-    display: flex;
+  .two-thirds {
+    flex: 0 0 calc(59% - 20px);
   }
-
-  .feedback__content-secondline {
-    display: flex;
+  .third {
+    flex: 0 0 calc(33.33% - 20px);
   }
-
-  .feedback__content-thirdline {
-    display: flex;
+  .third-big {
+    flex: 0 0 calc(41% - 10px);
   }
 
   .facebook-avatarlogo {
@@ -131,495 +127,251 @@ export default {
 
     text-align: center;
     margin-top: -25px;
+    margin-bottom: 16px;
   }
 
-  .feedback__firstline-card1 {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 640px;
-    height: 350px;
-    margin: 48px 32px 32px 0;
-    .feedback__firstline-title1 {
+  .position-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    .btn {
+      display: none;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+
+      background: linear-gradient(180deg, #40E896 0%, #0CB27F 120.83%);
+      width: 198px;
+      height: 48px;
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 18px;
       line-height: 22px;
 
-      color: #404040;
+      text-transform: uppercase;
 
-      width: 103px;
-      margin-left: 137px;
-      margin-top: -65px;
-    }
-    .feedback__firstline-text1 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-
-      color: #1A1A1A;
-
-      width: 580px;
-      margin-left: 32px;
-      margin-top: 52px;
-    }
-    .feedback__firstline-continue1 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #0CB27F;
-
-      width: 124px;
-      margin-left: 32px;
-      margin-top: 56px;
-      margin-bottom: 30px;
-    }
-    .user-photo1 {
-      border-radius: 100px;
-      margin-top: 30px;
-      margin-left: 30px;
+      color: #FFFFFF;
     }
   }
 
-  .feedback__firstline-card2 {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-
-    width: 448px;
-    height: 350px;
-    margin-top: 48px;
-    margin-bottom: 32px;
-    .user-photo2 {
-      border-radius: 100px;
-      margin-top: 30px;
-      margin-left: 30px;
-    }
-    .feedback__firstline-title2 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #404040;
-
-      width: 144px;
-      margin-left: 137px;
-      margin-top: -65px;
-    }
-    .feedback__firstline-text2 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-
-      color: #1A1A1A;
-
-      padding-top: 52px;
-      padding-left: 32px;
-      width: 400px;
-    }
-    .feedback__firstline-continue2 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #0CB27F;
-
-      width: 160px;
-      padding-left: 32px;
-      padding-top: 32px;
-    }
-  }
-
-  .feedback__secondline-card3 {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-
-    width: 352px;
-    height: 350px;
-
-    margin-bottom: 32px;
-    .user-photo3 {
-      border-radius: 100px;
-      margin-top: 30px;
-      margin-left: 30px;
-    }
-    .feedback__secondline-title3 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #404040;
-
-      width: 144px;
-      margin-left: 137px;
-      margin-top: -65px;
-    }
-    .feedback__secondline-text3 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-
-      color: #1A1A1A;
-
-      padding-top: 52px;
-      padding-left: 32px;
-      width: 320px;
-    }
-    .feedback__secondline-continue3 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #0CB27F;
-
-      width: 160px;
-      padding-left: 32px;
-      padding-top: 56px;
-    }
-  }
-
-  .feedback__secondline-card4 {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-
-    width: 352px;
-    height: 350px;
-
-    margin-left: 32px;
-    margin-bottom: 32px;
-    .user-photo4 {
-      margin-top: 30px;
-      margin-left: 30px;
-      width: 80px;
-      height: 80px;
-    }
-    .feedback__secondline-title4 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #404040;
-
-      width: 144px;
-      margin-left: 137px;
-      margin-top: -65px;
-    }
-    .feedback__secondline-text4 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-
-      color: #1A1A1A;
-
-      padding-top: 52px;
-      padding-left: 32px;
-      width: 320px;
-    }
-    .feedback__secondline-continue4 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #0CB27F;
-
-      width: 160px;
-      padding-left: 32px;
-      padding-top: 32px;
-    }
-  }
-
-  .feedback__secondline-card5 {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-
-    width: 352px;
-    height: 350px;
-
-    margin-left: 32px;
-    margin-bottom: 32px;
-    .user-photo5 {
-      margin-top: 30px;
-      margin-left: 30px;
-      width: 80px;
-      height: 80px;
-    }
-    .feedback__secondline-title5 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #404040;
-
-      width: 144px;
-      margin-left: 137px;
-      margin-top: -65px;
-    }
-    .feedback__secondline-text5 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-
-      color: #1A1A1A;
-
-      padding-top: 52px;
-      padding-left: 32px;
-      width: 320px;
-    }
-    .feedback__secondline-continue5 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #0CB27F;
-
-      width: 160px;
-      padding-left: 32px;
-      padding-top: 32px;
-    }
-  }
-
-  .feedback__thirdline-card6 {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 640px;
-    height: 350px;
-
+  .feedback-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
     margin-bottom: 180px;
-    .feedback__thirdline-title6 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #404040;
-
-      width: 103px;
-      margin-left: 137px;
-      margin-top: -65px;
-    }
-    .feedback__thirdline-text6 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-
-      color: #1A1A1A;
-
-      width: 580px;
-      margin-left: 32px;
-      margin-top: 52px;
-    }
-    .feedback__thirdline-continue6 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-
-      color: #0CB27F;
-
-      width: 124px;
-      margin-left: 32px;
-      margin-top: 56px;
-      margin-bottom: 30px;
-    }
-    .user-photo6 {
-      border-radius: 100px;
-      margin-top: 30px;
-      margin-left: 30px;
-    }
-  }
-
-  .feedback_content-add {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-
-    width: 448px;
-    height: 350px;
-
-    margin-left: 32px;
-    margin-bottom: 180px;
-    .feedback-add {
-      background: #F9F9F9;
-      border-radius: 8px;
-
-      width: 172px;
-      height: 172px;
-
-      margin: 89px 138px;
+    .feedback__card {
       position: relative;
-      .add-horizontal {
-        border-bottom: 2px solid #C7C7C7;
-        width: 125px;
+      margin-top: 32px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      height: 350px;
+      .card__title {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
 
-        margin-left: 24px;
-        padding-top: 86px;
+        color: #404040;
+
+        width: 103px;
+        margin-left: 137px;
+        margin-top: -65px;
       }
-      .vertical-border {
-        margin-left: 86px;
-        top: 25px;
+      .card__text {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+
+        color: #1A1A1A;
+
+        margin-left: 32px;
+        margin-right: 28px;
+        margin-top: 52px;
+      }
+      .card__continue {
         position: absolute;
+        bottom: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #0CB27F;
+
+        width: 124px;
+        margin-left: 32px;
+        margin-top: 26px;
+        margin-bottom: 30px;
       }
+      .user-photo {
+        border-radius: 100px;
+        margin-top: 30px;
+        margin-left: 30px;
+      }
+    }
+    
+    .card__add {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 89px;
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
+    .feedback__quantity {
+      margin-top: 137px;
+    }
+
+    .feedback-container {
+      margin-bottom: 36px;
+      .feedback__card {
+        flex: 0 0 calc(50% - 20px);
+      }
+      .feedback__card:nth-child(1) {
+        flex: 0 0 calc(100%);
+        height: 270px;
+      }
+      .feedback__card:nth-child(3n+4) {
+        flex: 0 0 calc(100%);
+        height: 270px;
+      }
+
+      .feedback__card {
+        height: 400px;
+        .card__title {
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .card__text {
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .card__continue {
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .user-photo {
+          border-radius: 100px;
+          margin-top: 30px;
+          margin-left: 30px;
+        }
+      }
+      
+      .card__add {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+      }
+    }
+
     .feedback__title {
       font-size: 26px;
       line-height: 32px;
-      margin-top: -35px;
-    }
+    }     
 
-    .feedback__firstline-card1 {
-      width: 680px;
-      height: 290px;
-      margin: 48px 0 32px 0;
-      .feedback__firstline-title1 {
-        font-size: 16px;
-        line-height: 20px;
-        width: 146px;
-      }
-      .feedback__firstline-text1 {
-        font-size: 14px;
-        line-height: 18px;
-        margin-top: 72px;
-      }
-      .feedback__firstline-continue1 {
-        font-size: 16px;
-        line-height: 20px;
-
-        width: 111px;
-        margin-left: 32px;
-        margin-top: 32px;
-        margin-bottom: 30px;
+    .position-btn {
+      margin-bottom: 90px;
+      .btn {
+        display: block;
       }
     }
+  }
 
-    .feedback__firstline-card2 {
+  @media (max-width: 610px) {
+    .feedback__quantity {
+      margin-top: 107px;
+    }
+
+    .container {
+      padding: 0 10px;
+    }
+
+    .feedback-container {
+      .feedback__card {
+        height: 450px;
+        .card__title {
+          margin-left: 110px;
+          font-size: 13px;
+          line-height: 18px;
+        }
+        .card__text {
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .feedback__title {
+      font-size: 26px;
+      line-height: 32px;
+      margin-top: 0;
+    }   
+  }
+
+  @media (max-width: 450px) {
+    .feedback__quantity {
       display: none;
     }
 
-    .feedback__secondline-card3 {
-      width: 328px;
-      height: 318px;
-      .feedback__secondline-title3 {
-        font-size: 16px;
-        line-height: 20px;
-        width: 146px;
-      }
-      .feedback__secondline-text3 {
-        font-size: 14px;
-        line-height: 18px;
-        width: 264px;
-      }
-      .feedback__secondline-continue3 {
-        font-size: 16px;
-        line-height: 20px;
+    .feedback__title {
+      margin-top: 70px;
+    }
 
-        width: 200px;
-        margin-left: 0px;
-        margin-top: -20px;
-        margin-bottom: 0px;
+    .feedback-container {
+      .feedback__card {
+        flex: 0 0 calc(100%);
+        height: 350px;
+      }
+      .feedback__card:nth-child(1) {
+        flex: 0 0 calc(100%);
+        height: 350px;
+      }
+      .feedback__card:nth-child(3n+4) {
+        flex: 0 0 calc(100%);
+        height: 350px;
       }
     }
 
-    .feedback__secondline-card4 {
-      width: 328px;
-      height: 318px;
-      .feedback__secondline-title4 {
-        font-size: 16px;
-        line-height: 20px;
-        width: 146px;
+    .feedback-container {
+      .feedback__card {
+        height: 350px;
+        .card__title {
+          margin-left: 137px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .card__text {
+          font-size: 14px;
+          line-height: 18px;
+        }
       }
-      .feedback__secondline-text4 {
-        font-size: 14px;
-        line-height: 18px;
-        width: 264px;
-      }
-      .feedback__secondline-continue4 {
-        font-size: 16px;
-        line-height: 20px;
-
-        width: 200px;
-        margin-left: 0px;
-        margin-top: -20px;
-        margin-bottom: 0px;
+      .card__add {
+        padding-top: 90px;
       }
     }
+  }
 
-    .feedback__secondline-card5 {
-      display: none;
-    }
-
-    .feedback__thirdline-card6 {
-      width: 680px;
-      height: 290px;
-      margin: 0 0 30px 0;
-      .feedback__thirdline-title6 {
-        font-size: 16px;
-        line-height: 20px;
-        width: 146px;
+  @media (max-width: 345px) {
+    .feedback-container {
+      .feedback__card {
+        height: 380px;
       }
-      .feedback__thirdline-text6 {
-        font-size: 14px;
-        line-height: 18px;
-        width: 623px;
-        margin-top: 73px;
+      .feedback__card:nth-child(1) {
+        flex: 0 0 calc(100%);
+        height: 380px;
       }
-      .feedback__thirdline-continue6 {
-        font-size: 16px;
-        line-height: 20px;
-
-        width: 200px;
-        margin-left: 30px;
-        margin-top: 30px;
-        margin-bottom: 0px;
+      .feedback__card:nth-child(3n+4) {
+        flex: 0 0 calc(100%);
+        height: 380px;
       }
-    }
-
-    .feedback_content-add {
-      margin-left: -550px;
-      margin-top: 400px;
-      margin-top: 324px;
-      width: 448px;
-      height: 350px;
     }
   }
 
@@ -629,116 +381,33 @@ export default {
     }
 
     .feedback__title {
-      font-size: 22px;
-      line-height: 27px;
-      margin-top: 400px;
+      margin-top: 55px;
     }
 
-    .feedback__firstline-card1 {
-      width: 296px;
-      height: 328px;
-      margin: 48px 0 32px 5px;
-      .feedback__firstline-title1 {
-        font-size: 16px;
-        line-height: 20px;
-        width: 146px;
-      }
-      .feedback__firstline-text1 {
+    .position-btn {
+      margin-bottom: 103px;
+      .btn {
+        display: block;
         font-size: 14px;
-        line-height: 18px;
-        margin-top: 62px;
-        width: 264px;
-        height: 144px;
-      }
-      .feedback__firstline-continue1 {
-        font-size: 16px;
-        line-height: 20px;
-
-        width: 111px;
-        margin-left: 32px;
-        margin-top: 15px;
-        margin-bottom: 0;
-      }
-      .user-photo1 {
-        width: 76px;
-        height: 76px;
+        line-height: 22px;
+        width: 180px;
+        height: 42px;
       }
     }
 
-    .feedback__firstline-card2 {
-      display: none;
-    }
-
-    .feedback__secondline-card3 {
-      width: 296px;
-      height: 308px;
-      margin-left: 5px;
-      .feedback__secondline-title3 {
-        font-size: 16px;
-        line-height: 20px;
-        width: 146px;
+    .feedback-container {
+      margin-bottom: 34px;
+      .feedback__card {
+        height: 380px;
       }
-      .feedback__secondline-text3 {
-        font-size: 14px;
-        line-height: 18px;
-        width: 264px;
-        margin-top: -10px;
+      .feedback__card:nth-child(1) {
+        flex: 0 0 calc(100%);
+        height: 380px;
       }
-      .feedback__secondline-continue3 {
-        font-size: 16px;
-        line-height: 20px;
-
-        width: 145px;
-        margin-left: 0px;
-        margin-top: -20px;
-        margin-bottom: 0px;
+      .feedback__card:nth-child(3n+4) {
+        flex: 0 0 calc(100%);
+        height: 380px;
       }
-      .user-photo3 {
-        width: 76px;
-        height: 76px;
-      }
-    }
-
-    .feedback__secondline-card4 {
-      display: none;
-    }
-
-    .feedback__secondline-card5 {
-      display: none;
-    }
-
-    .feedback__thirdline-card6 {
-      width: 296px;
-      height: 380px;
-      margin: 0 0 30px 5px;
-      .feedback__thirdline-title6 {
-        font-size: 16px;
-        line-height: 20px;
-        width: 146px;
-      }
-      .feedback__thirdline-text6 {
-        font-size: 14px;
-        line-height: 18px;
-        width: 240px;
-        margin-top: 63px;
-      }
-      .feedback__thirdline-continue6 {
-        font-size: 16px;
-        line-height: 20px;
-
-        width: 200px;
-        margin-left: 30px;
-        margin-top: 25px;
-        margin-bottom: 0px;
-      }
-      .user-photo6 {
-        width: 76px;
-        height: 76px;
-      }
-    }
-
-    .feedback_content-add {
-      display: none;
     }
   }
 </style>

@@ -56,8 +56,9 @@ export default {
   .container__photos {
     display: flex;
     flex-flow: column wrap;
-    align-content: space-between;
+    align-content: center;
     height: 1890px; 
+    padding: 0 5px;
   }
 
   .item {
@@ -100,6 +101,7 @@ export default {
     .btn {
       border: none;
       border-radius: 2px;
+      cursor: pointer;
 
       background: linear-gradient(180deg, #40E896 0%, #0CB27F 120.83%);
       width: 198px;
@@ -125,11 +127,54 @@ export default {
     }
 
     .container__photos {
-      height: 1250px; 
+      height: 1100px;
+      .item {
+        width: 28%;
+      } 
+    }
+  }
+
+  @media (max-width: 700px) {
+    .container__photos {
+      height: 1100px;
+    }
+  }
+
+  @media (max-width: 590px) {
+    .container__photos {
+      height: 1050px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .container__photos {
+      height: 950px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .container__photos {
+      height: 850px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .container__photos {
+      height: 750px;
     }
   }
 
   @media (max-width: 320px) {
+    .process-photos .container__photos {
+      flex-flow: wrap;
+      height: unset;
+      .item {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+      }
+    }
+
     .title {
       font-size: 22px;
       line-height: 27px;
@@ -140,31 +185,6 @@ export default {
     .container__photos {
       height: 630px; 
     }
-
-    .item {
-      width: 291px;
-      margin-bottom: 20px;
-    }
-
-    .item:nth-child(1) { display: none;}
-    .item:nth-child(2) { order: 2; margin-left: 3px;}
-    .item:nth-child(3) { display: none;}
-    .item:nth-child(4) { display: none;}
-    .item:nth-child(5) { order: 2; margin-left: 3px;}
-    .item:nth-child(6) { display: none;}
-    .item:nth-child(7) { display: none;}
-    .item:nth-child(8) { order: 2; margin-left: 3px;}
-    .item:nth-child(9) { display: none;}
-    .item:nth-child(10) { display: none;}
-    .item:nth-child(11) { display: none;}
-    .item:nth-child(12) { display: none;}
-    .item:nth-child(13) { display: none;}
-    .item:nth-child(14) { display: none;}
-    .item:nth-child(15) { display: none;}
-    .item:nth-child(16) { display: none;}
-    .item:nth-child(17) { display: none;}
-    .item:nth-child(18) { display: none;}
-    .item:nth-child(19) { display: none;}
 
     .position-btn {
       margin-bottom: 100px;

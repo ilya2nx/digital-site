@@ -3,18 +3,28 @@
     <div class="container">
       <h2 class="title">ФОРМАТЫ ОБУЧЕНИЯ</h2>
       <div class="online">
-        <h3 class="subtitle__online">Онлайн</h3>
-        <p class="subtitle__online-text">Минимальные затраты времени и финансов. Вам не придется никуда ездить, вы можете пройти онлайн- курс в комфортном для вас режиме и вернуться  к учебным материалам в любое время — доступ  к курсу бессрочный.</p>
-        <p class="online-link">Базовый курс по емейл-маркетингу</p>
-        <img class="online-image" src="@/img/online-image.jpg" alt="online">
+        <div class="online-content">
+          <h3 class="subtitle__online">Онлайн</h3>
+          <p class="subtitle__online-text">Минимальные затраты времени и финансов. Вам не придется никуда ездить, вы можете пройти онлайн- курс в комфортном для вас режиме и вернуться  к учебным материалам в любое время — доступ  к курсу бессрочный.</p>
+          <div class="link"><a href="#" class="online-link">Базовый курс по емейл-маркетингу</a></div>
+        </div>
+        <div class="image-container">
+          <img class="online-image" src="@/img/online-image.jpg" alt="online">
+        </div>
       </div>
       <div class="offline">
-        <h3 class="subtitle__offline">Оффлайн</h3>
-        <p class="subtitle__offline-text">Интенсивные занятия, живое общение с наставниками и другими учениками, актуальные тренды и вечные вопросы. Оффлайн-курсы позволят узнать максимум <br /> в сжатые сроки.</p>
-        <p class="offline-link1">Цифровой маркетинг</p>
-        <p class="offline-link2">CRM - маркетинг</p>
-        <p class="offline-link3">Digital team</p>
-        <img class="offline-image" src="@/img/offline-image.jpg" alt="offline">
+        <div class="image-container">
+          <img class="offline-image" src="@/img/offline-image.jpg" alt="offline">
+        </div>
+        <div class="offline-content">
+          <h3 class="subtitle__offline">Оффлайн</h3>
+          <p class="subtitle__offline-text">Интенсивные занятия, живое общение с наставниками и другими учениками, актуальные тренды и вечные вопросы. Оффлайн-курсы позволят узнать максимум <br /> в сжатые сроки.</p>
+          <div class="links">
+            <div class="half"><a href="#" class="offline-link">Цифровой маркетинг</a></div>
+            <div class="half"><a href="#" class="offline-link">CRM - маркетинг</a></div>
+            <div class="only"><a href="#" class="offline-link">Digital team</a></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -27,6 +37,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  a {
+    text-decoration: none;
+  }
+
   .title {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -39,150 +53,130 @@ export default {
 
     padding-top: 160px;
   }
-  
+
   .online {
-    position: relative;
-    .subtitle__online {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 22px;
-      line-height: 27px;
-
-      color: #0CB27F;
-
-      padding-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    .online-content {
+      width: 50%;
+      .subtitle__online {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+  
+        color: #0CB27F;
+  
+        padding-top: 42px;
+      }
+      .subtitle__online-text {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+  
+        color: #404040;
+        
+        padding-top: 24px;
+        width: 89%;
+      }
+      .link {
+        padding-top: 35px;
+        border-bottom: solid 1px #404040;
+        padding-bottom: 7px;
+        width: 73%;
+      }
+      .online-link {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+  
+        text-transform: uppercase;
+  
+        color: #404040;
+      }
     }
-    .subtitle__online-text {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 26px;
-
-      color: #404040;
-      
-      padding-top: 24px;
-      max-width: 530px;
-    }
-    .online-link {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-
-      text-transform: uppercase;
-
-      color: #404040;
-
-      padding-top: 35px;
-
-      border-bottom: solid 1px #404040;
-      padding-bottom: 7px;
-      max-width: 407px;
-    }
-    .online-image {
-      position: absolute;
-      right: 0;
-      bottom: -93px;
+    .image-container {
+      display: flex;
+      width: 45%;
+      .online-image {
+        padding-top: 35px;
+        width: 100%;
+      }
     }
   }
 
   .offline {
-    position: relative;
-    .subtitle__offline {
-      position: absolute;
-
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 22px;
-      line-height: 27px;
-
-      color: #0CB27F;
-
-      padding-top: 204px;
-      right: 428px;
+    display: flex;
+    justify-content: space-between;
+    .offline-content {
+      width: 48%;
+      .subtitle__offline {
+  
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+  
+        color: #0CB27F;
+  
+        padding-top: 100px;
+      }
+      .subtitle__offline-text {
+  
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+  
+        color: #404040;
+  
+        padding-top: 24px;
+        width: 100%;
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        div {
+          padding-bottom: 7px;
+        }
+        .half {
+          border-bottom: solid 1px #404040;
+          margin-right: 44px;
+          padding-top: 35px;
+        }
+        .only {
+          border-bottom: solid 1px #404040;
+          padding-top: 30px;
+        }
+        .offline-link {
+    
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+    
+          text-transform: uppercase;
+    
+          color: #404040;
+    
+        }
+      }
     }
-    .subtitle__offline-text {
-      position: absolute;
-
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 26px;
-
-      color: #404040;
-
-      right: 0;
-      padding-top: 255px;
-      max-width: 540px;
-    }
-    .offline-link1 {
-      position: absolute;
-
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-
-      text-transform: uppercase;
-
-      color: #404040;
-
-      padding-top: 394px;
-      right: 297px;
-
-      border-bottom: solid 1px #404040;
-      padding-bottom: 7px;
-      max-width: 244px;
-    }
-    .offline-link2 {
-      position: absolute;
-
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-
-      text-transform: uppercase;
-
-      color: #404040;
-
-      padding-top: 394px;
-      right: 70px;
-
-      border-bottom: solid 1px #404040;
-      padding-bottom: 7px;
-      max-width: 181px;
-    }
-    .offline-link3 {
-      position: absolute;
-
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-
-      text-transform: uppercase;
-
-      color: #404040;
-
-      padding-top: 454px;
-      right: 408px;
-
-      border-bottom: solid 1px #404040;
-      padding-bottom: 7px;
-      max-width: 181px;
-    }
-    .offline-image {
-      padding-top: 200px;
-      padding-left: 5px;
+    .image-container {
+      display: flex;
+      width: 45%;
+      .offline-image {
+        padding-top: 100px;
+        width: 100%;
+      }
     }
   }
 
@@ -194,75 +188,276 @@ export default {
     }
 
     .online {
-      .subtitle__online {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      .online-content {
+        width: 55%;
+        .subtitle__online {
+          font-size: 16px;
+          line-height: 20px;
+          padding-top: 24px;
+        }
+        .subtitle__online-text {
+          font-size: 14px;
+          line-height: 18px;          
+          padding-top: 16px;
+          width: 89%;
+        }
+        .link {
+          padding-top: 32px;
+          border-bottom: solid 1px #404040;
+          padding-bottom: 7px;
+          width: 73%;
+        }
+        .online-link {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
-      .online-image {
-        width: 328px;
-        height: 248px;
-        bottom: 0;
-      }
-      .subtitle__online-text {
-        font-size: 14px;
-        line-height: 18px;
-        max-width: 320px;
-      }
-      .online-link {
-        font-size: 16px;
-        line-height: 20px;
-        max-width: 244px;
-        padding-top: 32px;
+      .image-container {
+        display: flex;
+        width: 45%;
+        .online-image {
+          padding-top: 35px;
+          width: 100%;
+        }
       }
     }
 
     .offline {
-      .subtitle__offline {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 100px;
-        right: 228px;
+      display: flex;
+      justify-content: space-between;
+      .offline-content {
+        width: 48%;
+        .subtitle__offline {
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .subtitle__offline-text {
+          font-size: 14px;
+          line-height: 18px;    
+          padding-top: 31px;
+          width: 100%;
+        }
+        .links {
+          display: flex;
+          flex-wrap: wrap;
+          div {
+            padding-bottom: 7px;
+          }
+          .half {
+            border-bottom: solid 1px #404040;
+            margin-right: 22px;
+            padding-top: 25px;
+          }
+          .only {
+            border-bottom: solid 1px #404040;
+            padding-top: 25px;
+          }
+          .offline-link {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
       }
-      .offline-image {
-        width: 341px;
-        padding-top: 93px;
-        padding-left: 0;
-        bottom: 0;
+      .image-container {
+        display: flex;
+        width: 45%;
+        .offline-image {
+          padding-top: 100px;
+          width: 100%;
+        }
       }
-      .subtitle__offline-text {
-        font-size: 14px;
-        line-height: 18px;
-        right: -18px;
-        padding-top: 151px;
-        max-width: 328px;
-      }
-      .offline-link1 {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 265px;
-        right: 95px;
+    }
+  }
 
-        padding-bottom: 5px;
-        max-width: 217px;
-      }
-      .offline-link2 {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 315px;
-        right: 150px;
+  @media (max-width: 630px) {
+    .title {
+      font-size: 26px;
+      line-height: 32px;
+      padding-top: 90px;
+    }
 
-        padding-bottom: 5px;
-        max-width: 161px;
+    .online {
+      display: flex;
+      justify-content: space-between;
+      .online-content {
+        width: 45%;
+        .subtitle__online {
+          font-size: 16px;
+          line-height: 20px;
+          padding-top: 24px;
+        }
+        .subtitle__online-text {
+          font-size: 14px;
+          line-height: 16px;          
+          padding-top: 10px;
+          width: 89%;
+        }
+        .link {
+          padding-top: 22px;
+          border-bottom: solid 1px #404040;
+          padding-bottom: 7px;
+          width: 73%;
+        }
+        .online-link {
+          font-size: 14px;
+          line-height: 18px;
+        }
       }
-      .offline-link3 {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 315px;
-        right: 0px;
+      .image-container {
+        display: flex;
+        width: 55%;
+        .online-image {
+          padding-top: 35px;
+          width: 100%;
+          height: 250px;
+        }
+      }
+    }
 
-        padding-bottom: 5px;
-        max-width: 119px;
+    .offline {
+      display: flex;
+      justify-content: space-between;
+      .offline-content {
+        width: 45%;
+        .subtitle__offline {
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .subtitle__offline-text {
+          font-size: 14px;
+          line-height: 16px;    
+          padding-top: 31px;
+          width: 100%;
+        }
+        .links {
+          display: flex;
+          flex-wrap: wrap;
+          div {
+            padding-bottom: 5px;
+          }
+          .half {
+            border-bottom: solid 1px #404040;
+            margin-right: 12px;
+            padding-top: 15px;
+          }
+          .only {
+            border-bottom: solid 1px #404040;
+            padding-top: 15px;
+          }
+          .offline-link {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+      .image-container {
+        display: flex;
+        width: 50%;
+        .offline-image {
+          padding-top: 100px;
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    .title {
+      font-size: 22px;
+      line-height: 27px;
+      padding-top: 55px;
+    }
+
+    .online {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .online-content {
+        width: 100%;
+        order: 2;
+        .subtitle__online {
+          font-size: 16px;
+          line-height: 20px;
+          padding-top: 24px;
+        }
+        .subtitle__online-text {
+          font-size: 14px;
+          line-height: 18px;          
+          padding-top: 16px;
+          width: 89%;
+        }
+        .link {
+          padding-top: 32px;
+          border-bottom: solid 1px #404040;
+          padding-bottom: 7px;
+          width: 82%;
+        }
+        .online-link {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      .image-container {
+        display: flex;
+        width: 100%;
+        order: 1;
+        .online-image {
+          padding-top: 24px;
+          width: 100%;
+          height: unset;
+        }
+      }
+    }
+
+    .offline {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .offline-content {
+        width: 100%;
+        .subtitle__offline {
+          font-size: 16px;
+          line-height: 20px;
+          padding-top: 24px;
+        }
+        .subtitle__offline-text {
+          font-size: 14px;
+          line-height: 18px;    
+          padding-top: 31px;
+          width: 100%;
+        }
+        .links {
+          display: flex;
+          flex-wrap: wrap;
+          div {
+            padding-bottom: 7px;
+          }
+          .half {
+            border-bottom: solid 1px #404040;
+            margin-right: 22px;
+            padding-top: 25px;
+          }
+          .only {
+            border-bottom: solid 1px #404040;
+            padding-top: 25px;
+          }
+          .offline-link {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+      .image-container {
+        display: flex;
+        width: 100%;
+        .offline-image {
+          padding-top: 100px;
+          width: 100%;
+          height: unset;
+        }
       }
     }
   }
@@ -272,82 +467,95 @@ export default {
       font-size: 22px;
       line-height: 27px;
       padding-top: 55px;
-      padding-left: 7px;
     }
 
     .online {
-      .subtitle__online {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 300px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .online-content {
+        width: 100%;
+        order: 2;
+        .subtitle__online {
+          font-size: 16px;
+          line-height: 20px;
+          padding-top: 24px;
+        }
+        .subtitle__online-text {
+          font-size: 14px;
+          line-height: 18px;          
+          padding-top: 16px;
+          width: 89%;
+        }
+        .link {
+          padding-top: 32px;
+          border-bottom: solid 1px #404040;
+          padding-bottom: 7px;
+          width: 82%;
+        }
+        .online-link {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
-      .online-image {
-        width: 328px;
-        height: 248px;
-        bottom: 0;
-        top: 24px;
-        right: -10px;
-      }
-      .subtitle__online-text {
-        font-size: 14px;
-        line-height: 18px;
-        max-width: 270px;
-      }
-      .online-link {
-        font-size: 16px;
-        line-height: 20px;
-        max-width: 244px;
-        padding-top: 24px;
+      .image-container {
+        display: flex;
+        width: 100%;
+        order: 1;
+        .online-image {
+          padding-top: 24px;
+          width: 100%;
+          height: unset;
+        }
       }
     }
 
     .offline {
-      .subtitle__offline {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 300px;
-        right: 210px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .offline-content {
+        width: 100%;
+        .subtitle__offline {
+          font-size: 16px;
+          line-height: 20px;
+          padding-top: 24px;
+        }
+        .subtitle__offline-text {
+          font-size: 14px;
+          line-height: 18px;    
+          padding-top: 31px;
+          width: 100%;
+        }
+        .links {
+          display: flex;
+          flex-wrap: wrap;
+          div {
+            padding-bottom: 7px;
+          }
+          .half {
+            border-bottom: solid 1px #404040;
+            margin-right: 22px;
+            padding-top: 25px;
+          }
+          .only {
+            border-bottom: solid 1px #404040;
+            padding-top: 25px;
+          }
+          .offline-link {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
       }
-      .offline-image {
-        width: 320px;
-        height: 253px;
-        padding-top: 50px;
-        padding-left: 0;
-        margin-left: -10px;
-      }
-      .subtitle__offline-text {
-        font-size: 14px;
-        line-height: 18px;
-        right: 6px;
-        padding-top: 330px;
-        max-width: 287px;
-      }
-      .offline-link1 {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 465px;
-        right: 77px;
-
-        padding-bottom: 5px;
-        max-width: 217px;
-      }
-      .offline-link2 {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 520px;
-        right: 133px;
-
-        padding-bottom: 5px;
-        max-width: 161px;
-      }
-      .offline-link3 {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 575px;
-        right: 175px;
-
-        padding-bottom: 5px;
-        max-width: 119px;
+      .image-container {
+        display: flex;
+        width: 100%;
+        .offline-image {
+          padding-top: 100px;
+          width: 100%;
+          height: unset;
+        }
       }
     }
   }
